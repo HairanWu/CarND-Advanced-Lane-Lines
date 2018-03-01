@@ -205,7 +205,7 @@ show_images(test_images,test_images_label)
 ```
 
 
-![png](output_16_0.png)
+![png](resources/output_16_0.png)
 
 
 ### Undistort Images
@@ -225,7 +225,7 @@ show_images(undistort_images,test_images_label)
 ```
 
 
-![png](output_19_0.png)
+![png](resources/output_19_0.png)
 
 
 ## <span id="jump3">Step 3: Use color transforms, gradients, etc., to create a thresholded binary image.</span>
@@ -297,7 +297,7 @@ show_images(images,label)
 ```
 
 
-![png](output_23_0.png)
+![png](resources/output_23_0.png)
 
 
 ### Color threshold
@@ -326,7 +326,7 @@ show_images(color_binary,test_images_label)
 ```
 
 
-![png](output_27_0.png)
+![png](resources/output_27_0.png)
 
 
 
@@ -352,7 +352,7 @@ show_images(color_binary,test_images_label)
 ```
 
 
-![png](output_30_0.png)
+![png](resources/output_30_0.png)
 
 
 
@@ -377,7 +377,7 @@ show_images(color_binary,test_images_label)
 ```
 
 
-![png](output_33_0.png)
+![png](resources/output_33_0.png)
 
 
 ### gradients: sobel
@@ -458,7 +458,7 @@ show_images(gradient_binary,test_images_label)
 ```
 
 
-![png](output_36_0.png)
+![png](resources/output_36_0.png)
 
 
 ###  Combined thresholded binary
@@ -488,7 +488,7 @@ show_images(filted_binary,test_images_label)
 ```
 
 
-![png](output_39_0.png)
+![png](resources/output_39_0.png)
 
 
 ## <span id="jump4">Step 4: Apply a perspective transform to rectify binary image ("birds-eye view").</span>
@@ -555,7 +555,7 @@ M,Minv = perspective_transform_matrix(straightimage,show_debug=True)
     
 
 
-![png](output_43_1.png)
+![png](resources/output_43_1.png)
 
 
 
@@ -579,7 +579,7 @@ show_images(warp_images,test_images_label)
 ```
 
 
-![png](output_46_0.png)
+![png](resources/output_46_0.png)
 
 
 ## <span id="jump5">Step 5: Detect lane pixels and fit to find the lane boundary.</span>
@@ -607,7 +607,7 @@ show_histogram(warp_images)
 ```
 
 
-![png](output_50_0.png)
+![png](resources/output_50_0.png)
 
 
 
@@ -723,7 +723,7 @@ show_images(fittedimge,test_images_label)
 ```
 
 
-![png](output_52_0.png)
+![png](resources/output_52_0.png)
 
 
 
@@ -821,7 +821,7 @@ show_images(fittedimge,test_images_label)
 ```
 
 
-![png](output_54_0.png)
+![png](resources/output_54_0.png)
 
 
 ## <span id="jump6">Setp 6: Determine the curvature of the lane and vehicle position with respect to center.</span>
@@ -918,7 +918,7 @@ show_images(unwarp_images,test_images_label)
     
 
 
-![png](output_63_1.png)
+![png](resources/output_63_1.png)
 
 
 ## <span id="jump8">Setp 8: Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.</span>
@@ -954,7 +954,7 @@ show_images(res_images,test_images_label)
     
 
 
-![png](output_66_1.png)
+![png](resources/output_66_1.png)
 
 
 ## Image Process with Debug
@@ -1245,11 +1245,11 @@ plt.title('Result Image')
 
 
 
-![png](output_73_2.png)
+![png](resources/output_73_2.png)
 
 
 
-![png](output_73_3.png)
+![png](resources/output_73_3.png)
 
 
 ## Test on Videos
