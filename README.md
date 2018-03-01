@@ -913,11 +913,6 @@ unwarp_images = list(map(unwarp, undistort_images,left_fit,right_fit))
 show_images(unwarp_images,test_images_label)
 ```
 
-    d:\ProgramData\Anaconda3\envs\carnd-term1\lib\site-packages\ipykernel_launcher.py:10: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
-      # Remove the CWD from sys.path while we load stuff.
-    
-
-
 ![png](resources/output_63_1.png)
 
 
@@ -948,11 +943,6 @@ res_images= list(map(draw_estimation, unwarp_images,left_fit,right_fit))
 
 show_images(res_images,test_images_label)
 ```
-
-    d:\ProgramData\Anaconda3\envs\carnd-term1\lib\site-packages\ipykernel_launcher.py:3: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
-      This is separate from the ipykernel package so we can avoid doing imports until
-    
-
 
 ![png](resources/output_66_1.png)
 
@@ -1229,22 +1219,6 @@ plt.imshow(warp_image_process_test_image)
 plt.title('Result Image')
 ```
 
-    d:\ProgramData\Anaconda3\envs\carnd-term1\lib\site-packages\ipykernel_launcher.py:81: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
-    d:\ProgramData\Anaconda3\envs\carnd-term1\lib\site-packages\ipykernel_launcher.py:52: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
-    d:\ProgramData\Anaconda3\envs\carnd-term1\lib\site-packages\ipykernel_launcher.py:10: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
-      # Remove the CWD from sys.path while we load stuff.
-    d:\ProgramData\Anaconda3\envs\carnd-term1\lib\site-packages\ipykernel_launcher.py:3: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
-      This is separate from the ipykernel package so we can avoid doing imports until
-    
-
-
-
-
-    <matplotlib.text.Text at 0x1a426463198>
-
-
-
-
 ![png](resources/output_73_2.png)
 
 
@@ -1292,27 +1266,6 @@ line_clip = clip1.fl_image(L.video_process_show) #NOTE: this function expects co
     
     Wall time: 1min 59s
     
-
-
-```python
-HTML("""
-<video width="960" height="450" controls>
-  <source src="{0}">
-</video>
-""".format(project_output))
-```
-
-
-
-
-
-<video width="960" height="450" controls>
-  <source src="test_videos_output/project_video_output.mp4">
-</video>
-
-
-
-
 ## Test on challenge Videos
 
 
@@ -1342,29 +1295,7 @@ line_clip = clip1.fl_image(L.video_process_show) #NOTE: this function expects co
     
     Wall time: 45 s
     
-
-
-```python
-HTML("""
-<video width="960" height="450" controls>
-  <source src="{0}">
-</video>
-""".format(challenge_output))
-```
-
-
-
-
-
-<video width="960" height="450" controls>
-  <source src="test_videos_output/challenge_video_output.mp4">
-</video>
-
-
-
-
 ## Test on harder challenge Videos
-
 
 ```python
 harder_challenge_source = "test_videos/harder_challenge_video.mp4"
@@ -1393,27 +1324,6 @@ white_clip = clip1.fl_image(L.video_process_show) #NOTE: this function expects c
     
     Wall time: 2min 16s
     
-
-
-```python
-HTML("""
-<video width="960" height="450" controls>
-  <source src="{0}">
-</video>
-""".format(harder_challenge_output))
-```
-
-
-
-
-
-<video width="960" height="450" controls>
-  <source src="test_videos_output/harder_challenge_video_output.mp4">
-</video>
-
-
-
-
 ## Project Output
 
 ### project_video
