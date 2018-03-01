@@ -124,7 +124,7 @@ ax2.set_title('Undistorted Image', fontsize=25)
 
 
 
-![png](output_9_1.png)
+![png](resources/output_9_1.png)
 
 
 ## <span id="jump2">Step 2: Apply a distortion correction to raw images</span>
